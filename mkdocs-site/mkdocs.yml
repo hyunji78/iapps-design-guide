@@ -1,0 +1,57 @@
+site_name: i-apps design guide
+site_description: i-apps 디자인 시스템 파운데이션 가이드
+theme:
+  name: material
+  language: ko
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  palette:
+    primary: white
+    accent: custom
+  font:
+    text: Pretendard
+  features:
+    - navigation.indexes
+    - toc.integrate
+    - content.code.copy
+
+plugins: []
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/brand.css
+
+extra_javascript:
+  - javascripts/color-swatch.js
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+
+nav:
+  - 아이앱스 디자인: index.md
+  - Foundations:
+      - Color: color.md
+      - Typography: typography.md
+      - Spacing: spacing.md
+      - Grid: grid.md
+      - International Design: international.md
+      - Elevation: elevation.md
+      - Radius: radius.md
+      - Iconography: iconography.md
+      - State: state.md
+      - Inclusive Design: accessibility.md
+  - Components:
+      - Input / Dropdown 트리거: components-input-dropdown.md
+      - Checkbox / Radio / Toggle: components-checkbox-radio-toggle.md
+      - Dropdown 메뉴 패널: components-dropdown-menu.md
+  - Voice & Writing:
+      - Voice and Tone: voice-tone.md
+      - Writing: writing.md
+  - 디자인 생성 금지사항: prohibited.md
+  - 문서 관리 방법: doc-management.md
