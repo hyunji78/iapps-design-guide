@@ -23,7 +23,7 @@
 </td></tr>
 <tr><td>그라데이션</td><td>linear 135deg, Primary 400→700</td></tr>
 <tr><td>Blur</td><td>10px (Figma "Layer Blur")</td></tr>
-<tr><td>불투명도</td><td>85%</td></tr>
+<tr><td>불투명도</td><td>70%</td></tr>
 <tr><td>쌓임 순서</td><td>콘텐츠보다 뒤 (z-index 낮음)</td></tr>
 </tbody>
 </table>
