@@ -548,21 +548,23 @@ body, .md-typeset {
   color: #D1D3D8;
 }
 
-/* Checkbox / Radio / Toggle mock */
+/* Checkbox / Radio / Toggle mock — white #FBFCFF / primary-500 #2D70F8 / gray-400 #DCDEE3 3색만 사용 */
 .md-typeset .mock-checkbox {
   width: 20px;
   height: 20px;
   box-sizing: border-box;
   border-radius: 4px;
-  background: #DCDEE3;
-  color: #9199A6;
+  background: #FBFCFF;
+  border: 1.5px solid #DCDEE3;
+  color: #DCDEE3;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 .md-typeset .mock-checkbox.is-checked {
-  background: #0955F1;
+  background: #2D70F8;
+  border-color: #2D70F8;
   color: #FBFCFF;
 }
 .md-typeset .mock-radio {
@@ -570,7 +572,7 @@ body, .md-typeset {
   height: 20px;
   box-sizing: border-box;
   border-radius: 9999px;
-  border: 4px solid #D1D3D8;
+  border: 4px solid #DCDEE3;
   background: #FBFCFF;
   display: flex;
   align-items: center;
@@ -582,13 +584,13 @@ body, .md-typeset {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #D1D3D8;
+  background: #DCDEE3;
 }
 .md-typeset .mock-radio.is-checked {
-  border-color: #0955F1;
+  border-color: #2D70F8;
 }
 .md-typeset .mock-radio.is-checked::after {
-  background: #0955F1;
+  background: #2D70F8;
 }
 .md-typeset .mock-toggle {
   width: 40px;
@@ -610,7 +612,7 @@ body, .md-typeset {
   background: #FBFCFF;
   box-shadow: 0 1px 2px rgba(26, 28, 32, 0.2);
 }
-.md-typeset .mock-toggle.is-checked { background: #0955F1; }
+.md-typeset .mock-toggle.is-checked { background: #2D70F8; }
 .md-typeset .mock-toggle.is-checked::after { left: 18px; }
 
 /* Dropdown 패널 mock */
