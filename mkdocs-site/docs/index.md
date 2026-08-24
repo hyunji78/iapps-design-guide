@@ -1,6 +1,6 @@
 기준 서비스: B2B CMS(관리자), 홈페이지, 랜딩페이지, 팝업, PPT · 기준 폰트: Pretendard (국/영), Pretendard JP (일문)
 
-📥 [전체 문서 MD 파일 다운로드](assets/iapps-design-system-guideline.md){:download}
+📥 [전체 문서 MD 파일 다운로드](assets/iapps-design-system-guideline.txt){ download="iapps-design-system-guideline.md" }
 
 ### 바로가기
 
