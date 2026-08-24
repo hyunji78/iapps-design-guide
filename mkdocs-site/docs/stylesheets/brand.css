@@ -601,6 +601,91 @@ body, .md-typeset {
   font-weight: 600;
 }
 
+/* 표 안에 바로 넣는 미니 미리보기(Preview 컬럼) */
+.md-typeset table .mini-bar {
+  display: inline-block;
+  height: 10px;
+  background: #2D70F8;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.md-typeset table .mini-track {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 10px;
+  background: #F3F4F5;
+  border-radius: 3px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.md-typeset table .mini-track .mini-bar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.md-typeset table .mini-radius {
+  display: inline-block;
+  background: #DEE8FD;
+  border: 1px solid #8AAFF9;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.md-typeset table .mini-elevation {
+  display: inline-block;
+  width: 56px;
+  height: 32px;
+  background: #FBFCFF;
+  border: 1px solid #F3F4F5;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+.md-typeset table .mini-type {
+  display: inline-block;
+  color: #1A1C20;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.md-typeset table .mini-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: #868B94;
+}
+.md-typeset table .mini-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  vertical-align: middle;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.md-typeset table .mini-grid {
+  display: inline-flex;
+  gap: 3px;
+  vertical-align: middle;
+  width: 140px;
+}
+.md-typeset table .mini-grid span {
+  flex: 1 1 0;
+  height: 16px;
+  background: #BCD1FB;
+  border-radius: 2px;
+}
+.md-typeset table .mini-touch {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border: 1.5px dashed #2D70F8;
+  border-radius: 6px;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Accessibility — 대비/터치 영역 */
 .md-typeset .contrast-scale {
   display: flex;

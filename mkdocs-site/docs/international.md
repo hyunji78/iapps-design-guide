@@ -32,14 +32,15 @@
 - 일본어 「 」는 괄호 대체가 아니라 강조·인용 전용
 - 텍스트 확장 비율(한국어 원문 기준):
 
-<div class="spacing-scale">
-  <div class="spacing-row"><span class="spacing-label" style="flex:0 0 90px;">10자 이하</span><div class="spacing-track"><div class="spacing-bar" style="left:60%;width:40%;"></div></div><span class="spacing-value" style="flex:0 0 90px;">150~250%</span></div>
-  <div class="spacing-row"><span class="spacing-label" style="flex:0 0 90px;">11~20자</span><div class="spacing-track"><div class="spacing-bar" style="left:52%;width:8%;"></div></div><span class="spacing-value" style="flex:0 0 90px;">130~150%</span></div>
-  <div class="spacing-row"><span class="spacing-label" style="flex:0 0 90px;">21~30자</span><div class="spacing-track"><div class="spacing-bar" style="left:44%;width:8%;"></div></div><span class="spacing-value" style="flex:0 0 90px;">110~130%</span></div>
-  <div class="spacing-row"><span class="spacing-label" style="flex:0 0 90px;">31~50자</span><div class="spacing-track"><div class="spacing-bar" style="left:36%;width:8%;"></div></div><span class="spacing-value" style="flex:0 0 90px;">90~110%</span></div>
-  <div class="spacing-row"><span class="spacing-label" style="flex:0 0 90px;">51자 이상</span><div class="spacing-track"><div class="spacing-bar" style="left:32%;width:4%;"></div></div><span class="spacing-value" style="flex:0 0 90px;">80~90%</span></div>
-</div>
-<p class="visual-note">막대는 국문 원문 대비 번역 후 길어질 수 있는 비율 구간(0~250% 기준)을 나타내요.</p>
+| 구간 | 비율 | 미리보기 |
+|---|---|---|
+| 10자 이하 | 150~250% | <span class="mini-track"><span class="mini-bar" style="left:60%;width:40%;"></span></span> |
+| 11~20자 | 130~150% | <span class="mini-track"><span class="mini-bar" style="left:52%;width:8%;"></span></span> |
+| 21~30자 | 110~130% | <span class="mini-track"><span class="mini-bar" style="left:44%;width:8%;"></span></span> |
+| 31~50자 | 90~110% | <span class="mini-track"><span class="mini-bar" style="left:36%;width:8%;"></span></span> |
+| 51자 이상 | 80~90% | <span class="mini-track"><span class="mini-bar" style="left:32%;width:4%;"></span></span> |
+
+<p class="visual-note">미리보기는 국문 원문 대비 번역 후 길어질 수 있는 비율 구간(0~250% 기준)을 나타내요.</p>
 
 - 버튼·라벨은 내용 기준으로 늘어나는 구조(고정폭 금지), 긴 텍스트 영역은 wrap 또는 ellipsis 기본 적용
 

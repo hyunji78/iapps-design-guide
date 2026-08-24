@@ -1,18 +1,11 @@
 # Elevation
 
-<div class="elevation-scale">
-  <div class="elevation-item"><div class="elevation-box" style="box-shadow:0 1px 2px rgba(26,28,32,.06), 0 1px 3px rgba(26,28,32,.08);"></div><span class="elevation-label">shadow-1</span></div>
-  <div class="elevation-item"><div class="elevation-box" style="box-shadow:0 2px 4px rgba(26,28,32,.06), 0 4px 6px rgba(26,28,32,.08);"></div><span class="elevation-label">shadow-2</span></div>
-  <div class="elevation-item"><div class="elevation-box" style="box-shadow:0 4px 6px rgba(26,28,32,.08), 0 10px 15px rgba(26,28,32,.10);"></div><span class="elevation-label">shadow-3</span></div>
-  <div class="elevation-item"><div class="elevation-box" style="box-shadow:0 8px 10px rgba(26,28,32,.08), 0 20px 25px rgba(26,28,32,.12);"></div><span class="elevation-label">shadow-4</span></div>
-</div>
-
-| 단계 | 용도 | CSS |
-|---|---|---|
-| shadow-1 | 살짝 뜬 카드, hover | `0 1px 2px rgba(26,28,32,.06), 0 1px 3px rgba(26,28,32,.08)` |
-| shadow-2 | 드롭다운, 툴팁, 팝오버 | `0 2px 4px rgba(26,28,32,.06), 0 4px 6px rgba(26,28,32,.08)` |
-| shadow-3 | 모달, 다이얼로그 | `0 4px 6px rgba(26,28,32,.08), 0 10px 15px rgba(26,28,32,.10)` |
-| shadow-4 | 토스트, 최상단 알림 | `0 8px 10px rgba(26,28,32,.08), 0 20px 25px rgba(26,28,32,.12)` |
+| 단계 | 용도 | CSS | 미리보기 |
+|---|---|---|---|
+| shadow-1 | 살짝 뜬 카드, hover | `0 1px 2px rgba(26,28,32,.06), 0 1px 3px rgba(26,28,32,.08)` | <span class="mini-elevation" style="box-shadow:0 1px 2px rgba(26,28,32,.06), 0 1px 3px rgba(26,28,32,.08);"></span> |
+| shadow-2 | 드롭다운, 툴팁, 팝오버 | `0 2px 4px rgba(26,28,32,.06), 0 4px 6px rgba(26,28,32,.08)` | <span class="mini-elevation" style="box-shadow:0 2px 4px rgba(26,28,32,.06), 0 4px 6px rgba(26,28,32,.08);"></span> |
+| shadow-3 | 모달, 다이얼로그 | `0 4px 6px rgba(26,28,32,.08), 0 10px 15px rgba(26,28,32,.10)` | <span class="mini-elevation" style="box-shadow:0 4px 6px rgba(26,28,32,.08), 0 10px 15px rgba(26,28,32,.10);"></span> |
+| shadow-4 | 토스트, 최상단 알림 | `0 8px 10px rgba(26,28,32,.08), 0 20px 25px rgba(26,28,32,.12)` | <span class="mini-elevation" style="box-shadow:0 8px 10px rgba(26,28,32,.08), 0 20px 25px rgba(26,28,32,.12);"></span> |
 
 색상 매칭 규칙은 1번 Color 섹션 참고.
 
