@@ -10,9 +10,10 @@ pip install mkdocs-material
 
 ## 2. 로컬에서 미리보기
 
-이 폴더(`mkdocs-site`) 안에서:
+이 폴더(`mkdocs-site`) 안에서 실행해야 함. 터미널 열었을 때 프로젝트 최상위 폴더(`iapps_design_system`)에 있다면 먼저 아래로 이동:
 
 ```bash
+cd mkdocs-site
 mkdocs serve
 ```
 
@@ -24,22 +25,43 @@ mkdocs serve
 
 ## 4. GitHub Pages로 배포
 
-이미 Git 계정이 있으니:
+### 처음 한 번만
+
+이미 Git 계정이 있으니, 터미널에서 **`iapps_design_system` 최상위 폴더**로 이동한 뒤:
 
 ```bash
-# 처음 한 번만 — 이 폴더를 깃 저장소로 만들고 GitHub에 새 repo를 만든 뒤 연결
+# 이 폴더를 깃 저장소로 만들고 GitHub에 새 repo를 만든 뒤 연결
 git init
 git add .
 git commit -m "init design system docs"
 git branch -M main
 git remote add origin <본인 repo 주소>
 git push -u origin main
+```
 
-# 사이트 배포 (이 한 줄이 core)
+### 이후 수정할 때마다 (평소 배포 루틴)
+
+내용을 고칠 때마다 아래 순서로. 먼저 **`mkdocs-site` 폴더로 이동**:
+
+```bash
+cd mkdocs-site
+```
+
+그다음 두 단계:
+
+```bash
+# 1. 수정한 원본(.md 등)을 GitHub(main 브랜치)에 저장 — 수정 기록이 남음
+git add .
+git commit -m "수정 내용 설명"
+git push
+
+# 2. 실제 사이트에 배포
 mkdocs gh-deploy
 ```
 
-`mkdocs gh-deploy`는 사이트를 빌드해서 `gh-pages` 브랜치에 자동으로 올려줌. 몇 분 뒤 `https://<github아이디>.github.io/<repo이름>/` 주소에서 확인 가능.
+`git add/commit/push`는 "원본 파일을 저장소에 백업 + 기록"하는 것이고, `mkdocs gh-deploy`는 그 원본을 빌드해서 실제 보여지는 사이트(`gh-pages` 브랜치)에 올리는 것 — **둘 다 해야** 원본도 안전하게 남고 사이트도 업데이트됨. `mkdocs gh-deploy`만 하면 사이트는 바뀌지만 원본 수정 기록은 저장소에 안 남으니 주의.
+
+몇 분 뒤 `https://<github아이디>.github.io/<repo이름>/` 주소에서 확인 가능.
 
 **참고**: GitHub Pages 무료 플랜은 사이트가 공개 상태로 열림(엔터프라이즈 아니면 완전 비공개 불가). 검색엔진에 안 잡히게 하려면 저장소 설정에서 `Settings → Pages`에 안내된 대로 두거나, `docs/robots.txt`에 아래 내용 추가:
 
@@ -69,4 +91,4 @@ Disallow: /
 
 1. `docs/`에 새 `.md` 파일 생성
 2. `mkdocs.yml`의 `nav:`에 한 줄 추가
-3. `mkdocs gh-deploy`로 다시 배포
+3. "[이후 수정할 때마다](#이후-수정할-때마다-평소-배포-루틴)" 순서대로 `git add/commit/push` 후 `mkdocs gh-deploy`
