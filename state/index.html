@@ -891,46 +891,44 @@
 
 <h1 id="state">State<a class="headerlink" href="#state" title="Permanent link">&para;</a></h1>
 <p>색을 새로 만들지 않고, 기존 50~900 스케일에서 단계를 이동하는 방식으로 통일.</p>
-<div class="state-scale">
-  <div class="state-item"><div class="state-chip" style="background:#0955F1;">버튼</div><span class="state-label">Default</span></div>
-  <div class="state-item"><div class="state-chip" style="background:#0A49C7;">버튼</div><span class="state-label">Hover</span></div>
-  <div class="state-item"><div class="state-chip" style="background:#0D3C9C;">버튼</div><span class="state-label">Pressed</span></div>
-  <div class="state-item state-selected"><div class="state-chip">버튼</div><span class="state-label">Selected</span></div>
-  <div class="state-item state-disabled"><div class="state-chip" style="background:#0955F1;">버튼</div><span class="state-label">Disabled</span></div>
-  <div class="state-item state-focus"><div class="state-chip" style="background:#0955F1;">버튼</div><span class="state-label">Focus</span></div>
-</div>
-
 <table>
 <thead>
 <tr>
 <th>상태</th>
 <th>규칙</th>
+<th>미리보기</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Default</td>
 <td>기본 단계 (예: primary-600)</td>
+<td><span class="mini-chip" style="background:#0955F1;color:#FBFCFF;">버튼</span></td>
 </tr>
 <tr>
 <td>Hover</td>
 <td>1단계 더 깊게 (primary-700)</td>
+<td><span class="mini-chip" style="background:#0A49C7;color:#FBFCFF;">버튼</span></td>
 </tr>
 <tr>
 <td>Pressed/Active</td>
 <td>2단계 더 깊게 (primary-800)</td>
+<td><span class="mini-chip" style="background:#0D3C9C;color:#FBFCFF;">버튼</span></td>
 </tr>
 <tr>
 <td>Selected(선택 유지)</td>
 <td>배경: surface-accent / 텍스트: primary-600</td>
+<td><span class="mini-chip" style="background:#F1F5FE;color:#2D70F8;border:1px solid #DEE8FD;">버튼</span></td>
 </tr>
 <tr>
 <td>Disabled</td>
 <td>opacity 40%, cursor: not-allowed (컬러 배경 위 사용이 잦아지면 전용 gray 토큰으로 전환 검토)</td>
+<td><span class="mini-chip" style="background:#0955F1;color:#FBFCFF;opacity:.4;">버튼</span></td>
 </tr>
 <tr>
 <td>Focus(키보드)</td>
 <td>2px 링(primary-600), 요소에서 2px 띄움. <code>:focus-visible</code> 사용 (마우스 클릭 시엔 안 보이게)</td>
+<td><span class="mini-chip" style="background:#0955F1;color:#FBFCFF;box-shadow:0 0 0 2px #FBFCFF, 0 0 0 4px #0955F1;">버튼</span></td>
 </tr>
 </tbody>
 </table>
