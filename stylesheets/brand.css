@@ -549,32 +549,46 @@ body, .md-typeset {
 }
 
 /* Checkbox / Radio / Toggle mock */
-.md-typeset .mock-checkbox,
+.md-typeset .mock-checkbox {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #DCDEE3;
+  color: #9199A6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.md-typeset .mock-checkbox.is-checked {
+  background: #0955F1;
+  color: #FBFCFF;
+}
 .md-typeset .mock-radio {
   width: 20px;
   height: 20px;
   box-sizing: border-box;
-  border: 1.5px solid #DCDEE3;
+  border-radius: 9999px;
+  border: 4px solid #D1D3D8;
   background: #FBFCFF;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.md-typeset .mock-checkbox { border-radius: 4px; }
-.md-typeset .mock-radio { border-radius: 9999px; }
-.md-typeset .mock-checkbox.is-checked,
-.md-typeset .mock-radio.is-checked {
-  background: #0955F1;
-  border-color: #0955F1;
-  color: #FBFCFF;
-}
-.md-typeset .mock-radio.is-checked::after {
+.md-typeset .mock-radio::after {
   content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #FBFCFF;
+  background: #D1D3D8;
+}
+.md-typeset .mock-radio.is-checked {
+  border-color: #0955F1;
+}
+.md-typeset .mock-radio.is-checked::after {
+  background: #0955F1;
 }
 .md-typeset .mock-toggle {
   width: 40px;
