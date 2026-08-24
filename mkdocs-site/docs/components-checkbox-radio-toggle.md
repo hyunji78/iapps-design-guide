@@ -25,6 +25,8 @@
 </div>
 
 - Checkbox·Radio 20×20px, Toggle 40×24px
-- 선택됨: Primary-600 / 선택 안 됨: Gray-400 — Checkbox는 배경 채움 위에 고스트 체크 아이콘, Radio는 링(4px)+중앙 점
+- 색상은 White(#FBFCFF)/Primary-500(#2D70F8)/Gray-400(#DCDEE3) 3가지만 사용
+- 선택됨: 배경·링·점 Primary-500, 아이콘/갭 White / 선택 안 됨: 배경·갭 White, 테두리·아이콘·점 Gray-400
+- Checkbox는 테두리+배경 위에 체크 아이콘(선택 안 됨일 땐 Gray-400 고스트 아이콘), Radio는 링(4px)+중앙 점 구조
 - Checkbox radius-1(4px), Radio·Toggle radius-full
 - SVG 기반으로 제작 (PNG 이미지 방식 지양)
