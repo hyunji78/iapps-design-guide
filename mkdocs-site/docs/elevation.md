@@ -11,10 +11,11 @@
 
 ## 그라데이션 글로우 (별도 토큰, 장식용 강조 — 랜딩 히어로 CTA 등 제한적 사용)
 
+<div class="glow-table">
 <table>
 <thead><tr><th>항목</th><th>값 예시</th><th>미리보기</th></tr></thead>
 <tbody>
-<tr><td>도형 크기</td><td>대상 요소 대비 -6px~+16px</td><td rowspan="5" style="vertical-align:middle;text-align:center;">
+<tr><td>도형 크기</td><td>대상 요소 대비 -6px~+16px</td><td rowspan="5" style="vertical-align:middle;text-align:center;min-width:220px;">
 <div class="glow-demo-wrap">
   <div class="glow-demo-blur"></div>
   <div class="glow-demo-card">CTA</div>
@@ -26,6 +27,7 @@
 <tr><td>쌓임 순서</td><td>콘텐츠보다 뒤 (z-index 낮음)</td></tr>
 </tbody>
 </table>
+</div>
 
 CSS 구현: 별도 `::before`/wrapper div에 `filter: blur()` — box-shadow는 그라데이션 미지원(Figma Drop Shadow와 동일한 제약). 부모에 `overflow: hidden` 있으면 잘리므로 확인 필요.
 
