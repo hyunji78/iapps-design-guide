@@ -1,5 +1,12 @@
 # Elevation
 
+<div class="elevation-scale">
+  <div class="elevation-item"><div class="elevation-box" style="box-shadow:0 1px 2px rgba(26,28,32,.06), 0 1px 3px rgba(26,28,32,.08);"></div><span class="elevation-label">shadow-1</span></div>
+  <div class="elevation-item"><div class="elevation-box" style="box-shadow:0 2px 4px rgba(26,28,32,.06), 0 4px 6px rgba(26,28,32,.08);"></div><span class="elevation-label">shadow-2</span></div>
+  <div class="elevation-item"><div class="elevation-box" style="box-shadow:0 4px 6px rgba(26,28,32,.08), 0 10px 15px rgba(26,28,32,.10);"></div><span class="elevation-label">shadow-3</span></div>
+  <div class="elevation-item"><div class="elevation-box" style="box-shadow:0 8px 10px rgba(26,28,32,.08), 0 20px 25px rgba(26,28,32,.12);"></div><span class="elevation-label">shadow-4</span></div>
+</div>
+
 | 단계 | 용도 | CSS |
 |---|---|---|
 | shadow-1 | 살짝 뜬 카드, hover | `0 1px 2px rgba(26,28,32,.06), 0 1px 3px rgba(26,28,32,.08)` |
@@ -18,6 +25,11 @@
 | Blur | 22px (Figma "Layer Blur") |
 | 불투명도 | 55% |
 | 쌓임 순서 | 콘텐츠보다 뒤 (z-index 낮음) |
+
+<div class="glow-demo-wrap">
+  <div class="glow-demo-blur"></div>
+  <div class="glow-demo-card">CTA 카드</div>
+</div>
 
 CSS 구현: 별도 `::before`/wrapper div에 `filter: blur()` — box-shadow는 그라데이션 미지원(Figma Drop Shadow와 동일한 제약). 부모에 `overflow: hidden` 있으면 잘리므로 확인 필요.
 

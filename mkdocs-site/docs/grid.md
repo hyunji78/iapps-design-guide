@@ -1,5 +1,21 @@
 # Grid
 
+<div class="grid-demo">
+  <div class="grid-demo-label">모바일 (~767px) · 4칼럼 · 거터 16px · 여백 16px</div>
+  <div class="grid-demo-frame" style="padding:0 16px; gap:16px;">
+    <div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div>
+  </div>
+  <div class="grid-demo-label">태블릿 (768~1023px) · 8칼럼 · 거터 24px · 여백 32px</div>
+  <div class="grid-demo-frame" style="padding:0 32px; gap:24px;">
+    <div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div>
+  </div>
+  <div class="grid-demo-label">데스크톱 (1024px~) · 12칼럼 · 거터 24px · 여백 40px</div>
+  <div class="grid-demo-frame" style="padding:0 40px; gap:24px;">
+    <div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div><div class="grid-demo-col"></div>
+  </div>
+</div>
+<p class="visual-note">칼럼 폭은 화면 너비에 따라 상대적으로 늘어나며, 위 다이어그램은 칼럼 수·거터·여백의 비율만 보여줘요.</p>
+
 | 구간 | 너비 | 칼럼 | 거터 | 좌우 여백 |
 |---|---|---|---|---|
 | 모바일 | ~767px | 4칼럼 (보통 1열 스택) | 16px | 16px |

@@ -2,6 +2,12 @@
 
 범위: Core(Button, Input, Badge, Card, Checkbox/Radio, Table 기본형, Modal) + Extended(Tabs, Dropdown, Pagination, Toast, Empty State, Tooltip) 우선, Advanced(날짜 range picker, 리치에디터, 파일업로더 등)는 필요 시 추가.
 
+<div class="component-preview">
+  <div class="preview-item"><div class="mock-input">입력해 주세요</div><span class="preview-caption">Default</span></div>
+  <div class="preview-item"><div class="mock-input is-focus">입력해 주세요</div><span class="preview-caption">Focus</span></div>
+  <div class="preview-item"><div class="mock-input is-disabled">입력해 주세요</div><span class="preview-caption">Disabled</span></div>
+</div>
+
 - 높이 40px, Radius 8px(radius-3), 너비는 Fill(가변)
 - 패딩: 상하 12px, 좌우 16px
 - Default: 배경 White, 테두리 Gray-400
